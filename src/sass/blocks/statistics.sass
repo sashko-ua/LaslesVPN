@@ -1,0 +1,50 @@
+.statistics
+    &__inner
+        position: relative
+        display: flex
+        align-items: center
+        justify-content: space-between
+        background: #FFFFFF
+        border-radius: 10px
+        height: 200px
+        width: 100%
+        padding: 0 90px
+        &::after
+            content: ''
+            display: block
+            position: absolute
+            bottom: 0px
+            left: 50%
+            transform: translateX(-50%)
+            width: 95%
+            height: 190px
+            border-radius: 10px
+            box-shadow: 0 24px 25px #0D1025
+            opacity: 0.06
+            z-index: -1
+    &__box
+        display: flex
+        align-items: center
+        justify-content: space-around
+        width: 33.333%
+        &::after
+            content: ''
+            display: block
+            height: 125px
+            width: 1px
+            background-color: #EEEFF2
+        &:last-child
+            &::after
+                content: none
+    &__text
+
+        font-size: 20px
+        line-height: 30px
+        color: $text
+        span
+            font-weight: 700
+            font-size: 25px
+            line-height: 30px
+            color: $dark-text
+        &--margin
+            margin: 0 0 0 36px
