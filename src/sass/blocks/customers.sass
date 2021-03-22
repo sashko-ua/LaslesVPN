@@ -1,6 +1,39 @@
 .customers
     &__slider
         position: relative
+        padding: 52px 0 120px
+        margin: 0 0 180px
+
+    .tns-controls, .tns-nav
+        position: absolute
+        bottom: 180px
+        z-index: 100
+
+    .tns-nav
+        left: 0
+        button
+            width: 15px
+            height: 15px
+            background: #DDE0E4
+            border-radius: 100%
+            border: none
+            margin: 0 15px 0 0
+            transition: all .2s linear
+        .tns-nav-active
+            width: 45px
+            background: $main-color
+            border-radius: 10px
+    .tns-controls
+        right: 0
+        button
+            width: 60px
+            height: 60px
+            border-radius: 100%
+            border: 2px solid $main-color
+            background-color: #fff
+            margin: 0 0 0 20px
+            &:nth-child(2)
+                background-color: $main-color
 
     &__box
         width: 400px
